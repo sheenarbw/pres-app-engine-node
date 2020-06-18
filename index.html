@@ -1,40 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/sky.css" id="theme" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <style>
+      .avitar {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="assets/1_VHYGqjhONSJ20pRlIUbg7w.png" />
+          <h3>Google App Engine (standard)</h3>
+          what - how - why - etc
+        </section>
+        <section>
+          <!-- <h2>Me :)</h2> -->
+          <table>
+            <tr>
+              <td style="vertical-align: top;">
+                <ul>
+                  <li>
+                    <a href="mailto:sheena.oconnell@umuzi.org">
+                      sheena.oconnell@umuzi.org
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://umuzi.org/">Umuzi</a> CTO
+                    <ul>
+                      <li class="fragment">
+                        Find high potential geeklings, train them, get them jobs
+                      </li>
+                      <li class="fragment">
+                        Build educational, recruitment and managment apps
+                      </li>
+                      <li class="fragment">teach and learn</li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+              <td width="300" style="vertical-align: middle;">
+                <img
+                  src="assets/IMG_20190904_085837.jpg"
+                  class="avitar"
+                  height="300"
+                  width="300"
+                />
+              </td>
+            </tr>
+          </table>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <h2>What is Appengine?</h2>
+
+          <ul>
+            <li>Serverless</li>
+            <li>Your code + Google's infrastructure</li>
+            <li>Google scale</li>
+            <li>
+              <a href="https://cloud.google.com/appengine/sla">99.95% uptime</a>
+              (unless you screw up)
+            </li>
+            <li>
+              <a
+                href="https://cloud.google.com/appengine/docs/standard/nodejs/quickstart"
+              >
+                Easy peasy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cloud.google.com/products/calculator/#id=3eae6652-13ec-4624-b208-5a972e2ef446"
+                >Cheap!</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Compare to other hosting options?</h3>
+          <img src="assets/comparison of products.png" />
+        </section>
+
+        <section>
+          <h3>Sweet spot?</h3>
+          <ul>
+            <li>Compatable with a supported runtime</li>
+            <li>No disk!</li>
+            <li>Apis and web apps</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>DEMO time</h1>
+          Step 1:
+          <a
+            href="https://cloud.google.com/appengine/docs/standard/nodejs/quickstart"
+            >Tutorial</a
+          ><br />
+          Step 2: Platform tour
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
