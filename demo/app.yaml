@@ -1,4 +1,4 @@
 runtime: nodejs10
-service: foo
+# service: foo
 # For more options see:
 # https://cloud.google.com/appengine/docs/standard/nodejs/config/appref

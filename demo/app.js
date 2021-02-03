@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.status(200).send("Hello Google Dev Group! [Foo. v2]").end();
+    res.status(200).send("Hello Google Dev Group! [v1]").end();
 });
 
 app.get("/oh-no", (req, res) => {
